@@ -26,8 +26,9 @@ The first thing you’ll need is to register for a Facebook application, you can
 You’ll be greeted by a pop-up asking you which kind of app you want to create
 You can either choose www or tell it to skip and use basic setup, remember, we just need the ID for the plug-in.
 After that, you’ll get to name your app and generate an ID
-
+```
 ## Get the Facebook Plugin
+```
 Now we need to get the plugin, detailed instructions are in the [ionic-native docs] (http://ionicframework.com/docs/v2/native/facebook/)
 But basically you’re going to open your terminal  and type
 ionic plugin add cordova-plugin-facebook4 --variable APP_ID="123456789" --variable APP_NAME="myApplication"
@@ -35,7 +36,6 @@ Where APP_ID is the id for the app we just created in the Facebook developers pa
 
 Now we need to go back to the Facebook developer page to add both platforms, iOS and Android, but first, they’re going to ask us for some info, let’s get it now.
 Go to your app’s config.xml file and look for this line of code:
-```
 <widget id="com.ionicframework.fbauth285351" version="0.0.1" 
 xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
 ```
@@ -98,7 +98,7 @@ import * as firebase from 'firebase';
 ```
 
 ### app module
-
+```
 import * as firebase from 'firebase';
 
   var config = {
@@ -109,7 +109,7 @@ import * as firebase from 'firebase';
     messagingSenderId: "175096937966"
   };
   firebase.initializeApp(config);
-
+```
 ### Resources
 
 * Ionic 2 - http://www.ionicframework.com
@@ -119,5 +119,6 @@ import * as firebase from 'firebase';
 * Ionic2 Native - https://ionicframework.com/docs/v2/native/
 
 * firebase console - https://console.firebase.google.com
+
 
 
